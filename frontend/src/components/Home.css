@@ -1,0 +1,24 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+  
+  .welcome-text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .view-events-button {
+    margin-top: 20px;
+    background-color: orangered;
+    color: white;
+  }
+  
+  .view-events-button:hover {
+    background-color: darkred;
+  }
+  

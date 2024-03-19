@@ -1,0 +1,112 @@
+/* ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  li {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    max-width: 250px;
+    max-height: 400px;
+    list-style-type: none;
+    justify-content: flex-start;
+  }
+  
+  .card {
+    margin: auto;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 10px #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  .card > img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    
+  }
+  .card article {
+    padding: 5px;
+  }
+  .card h3 {
+    padding: 4px;
+  }
+  
+  .card p {
+    padding: 3x;
+  } */
+
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+li {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    max-width: 250px;
+    max-height: 400px;
+    list-style-type: none;
+    justify-content: flex-start;
+}
+
+.card {
+    margin: 20px;
+    padding: 15px;
+    width: 250px;
+    max-width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    max-height: 200px; /* Limit the maximum height of the image */
+}
+
+.card-content {
+    flex-grow: 1; /* Allow the content to expand */
+    padding: 15px;
+}
+
+.card h2,
+.card h3,
+.card p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    overflow: hidden; /* Prevent text from overflowing */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
